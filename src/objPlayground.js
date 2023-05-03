@@ -35,11 +35,11 @@
 */
 
 const calculator = (number1, number2) => {
-  const sum = number1 + number2;
-  const mult = number1 * number2;
-  const sub = number1 - number2;
-  const div = Math.floor(number1 / number2);
-  return { sum: sum, mult: mult, sub: sub, div: div };
+  const soma = number1 + number2;
+  const multiplicação = number1 * number2;
+  const subtração = number1 - number2;
+  const divisao = Math.floor(number1 / number2);
+  return { sum: soma, mult: multiplicação, sub: subtração, div: divisao };
 };
 
 const arrayGenerator = (type, object) => {
@@ -49,7 +49,7 @@ const arrayGenerator = (type, object) => {
   } else if (type === 'values') {
     array = Object.values(object);
   } else {
-    array = Object.entries(object)
+    array = Object.entries(object);
   }
   return array;
 };
