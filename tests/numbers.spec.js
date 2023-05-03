@@ -2,7 +2,9 @@
 /* eslint-disable no-unused-vars */
 
 const numbers = require('../src/numbers');
-
+// referencia: https://www.w3schools.com/nodejs/ref_assert.asp
+// referencia: https://www.w3schools.com/nodejs/met_assert_strictequal.asp
+const assert = require('assert')
 /*
   A função `numbers` recebe um array de tamanho variável e retorna `true` se todos os parâmetros forem do tipo 'number' e `false` caso contrário.
 
@@ -18,6 +20,7 @@ describe('2 - Implemente os casos de teste para a função `numbers`', () => {
   it('Verifica se a função `numbers` retorna `true` quando o array contém apenas números e falso caso contrário', () => {
     fail('Teste vazio!');
     // Escreva um teste em que a função recebe [1, 2, 3, 4, 5] e retorna true
+    assert.
     // Escreva um teste em que a função recebe [1, 2, '3', 4, 5] e retorna false
     // Escreva um teste em que a função recebe [1, 'a', 3] e retorna false
     // Escreva um teste em que a função recebe [' '] e retorna false
