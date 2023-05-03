@@ -19,7 +19,7 @@
 */
 
 const vqv = (ich, alter) => {
-if ( alter === undefined && ich === undefined) {
+if (alter === undefined && ich === undefined) {
   return undefined;
 } return `Oi, meu nome é ${ich}!
 Tenho ${alter} anos,
