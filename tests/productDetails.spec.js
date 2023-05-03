@@ -43,6 +43,9 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
     // Teste se os dois itens dentro do array retornado pela função são objetos.
     assert.strictEqual(typeof productDetails(), 'object');
     // Teste se quando passado parâmetros diferentes entre si, os dois objetos também são diferentes entre si.
+    expect(productDetails('Alcool', 'Mascaras descartaveis')[0] !== productDetails('Alcool', 'Mascaras descartaveis')[1]).toBe(true);
     // Teste se os dois productIds terminam com 123.
+    expect(productDetails('Alcool', 'Mascaras descartaveis')[0].details).toHaveProperty('productId', 'Alcool123');
+    expect(productDetails('Alcool', 'Mascaras descartaveis')[1].details).toHaveProperty('productId', 'Mascaras descartaveis123');
   });
 });
