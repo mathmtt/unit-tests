@@ -1,6 +1,16 @@
 /* eslint-disable max-len */
 // Siga as orientações do README!
 
+const check = (array) => {
+    let total = 0;
+    for (let i = 0; i < array.length; i += 1) {
+      if (array[i] === 'coxinha' || array[i] === 'agua') {
+        total += 3.9;
+      }
+    }
+    return total * 1.10;
+  };
+
 const createMenu = (object) => {
     const menu = {
         fetchMenu: () => object,
@@ -13,8 +23,8 @@ const createMenu = (object) => {
                     return check(produtos);
                 }
             }
-        }
-    }
+        },
+    };
     return menu;
 };
 
